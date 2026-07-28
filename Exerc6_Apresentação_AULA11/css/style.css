@@ -1,0 +1,58 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da Página */
+body{
+    
+    background-color: rgba(196, 205, 248, 0.92);
+    color: black;
+    font-family: Arial, sans-serif
+    
+}
+
+/* Cabeçalho */
+header{
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Alinhando apresentação da loja! */
+#ap_loja{
+    text-align: center;
+
+}
+
+/* Banner */
+.banner{
+    background-color: #e3f2fd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* Cards de produto */
+#produtos{
+    background-color:rgba(43, 116, 241, 0.753);
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*Títulos*/
+
+
+/* RODAPÉ */
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin-top: 20 px;
+}
