@@ -28,12 +28,16 @@ header{
     padding: 16px 24px;
     box-shadow: 0 2px 8px
     rgba(0,0,0,0.3); 
+    border: 1px solid #8B5CF6;
 }
 
 /* Alinhando apresentação da loja! */
 #ap_loja{
     text-align: center;
-    margin-top: 75PX;
+    margin-top: 100PX;  
+}
+#loja{
+    margin-bottom: 30px;
 }
 
 
@@ -51,9 +55,14 @@ header{
 /* Cards de produto */
 #produtos{
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .Teclado,.Monitor,.Mouse,.Gabinete{
+    position: relative;
     background-color: #111C35;
     color: #f8fafc;
     border: 1px solid #ddd;
@@ -63,6 +72,24 @@ header{
     text-align: center;
     display: inline-block;
     width: 350px;
+
+    transition: all 0.3s ease;
+}
+
+.Teclado:hover, .Monitor:hover, .Mouse:hover, .Gabinete:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    border-color: blueviolet;
+}
+#NEW{
+position: absolute;
+top: 8px;
+right: 12px;
+background: #e74c3c;
+color: white;
+padding: 4px 8px;
+border-radius: 4px;
+
 }
     
 ul li{
