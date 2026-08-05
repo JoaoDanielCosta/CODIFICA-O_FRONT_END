@@ -1,3 +1,15 @@
+:root{
+    --primary-color: #1e90ff;
+    --secundary-color:#e3f2fd;
+    --dark-color: #222;
+    --text-color:#333;
+    --bg-color: #f4f4f4;
+
+    --spacing: 15px;
+    --radius: 8px;
+
+}
+
 /* Reset */
 *{
     margin: 0;
@@ -86,15 +98,18 @@ a:hover{
 
 
 /* Cards de produto */
-#produtos{
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
 
+#titulo_catalogo{
+    display: flex;
+    justify-content: center;
+}
+
+
+#catalogo{
+    text-align: center;
+    gap: 20px;
     display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     
 }
 
@@ -107,6 +122,7 @@ a:hover{
     margin: 20px;
     border-radius: 25px;
     width: 350px;
+    
 
     transition: all 0.3s ease;
 }
@@ -119,19 +135,23 @@ a:hover{
 #NEW{
 position: absolute;
 top: 8px;
-right: 5px;
+right: 10px;
 background: #e74c3c;
 color: white;
-padding: 4px 8px;
-border-radius: 4px;
+padding: 2px 4px;
+border-radius: 6px;
 
 }
-    
-ul li{
-    display: inline-block;
-    margin-right: 16px;
-}
 
+/*Responsividade dos Cards*/
+@media (min-width:768px){
+#catalogo{
+    grid-template-columns: 1fr 1fr;
+}}
+@media (min-width:1024px){
+#catalogo{
+    grid-template-columns: 1fr 1fr 1fr;
+}}
 
 /*Botões*/
 button {
