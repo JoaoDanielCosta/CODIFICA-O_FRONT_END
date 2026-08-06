@@ -94,6 +94,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     
+    
 }
 
 
@@ -106,10 +107,11 @@ a:hover{
 
 
 #catalogo{
-    text-align: center;
-    gap: 20px;
+    text-align: center;  
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr;
+    gap: 20px;
     
 }
 
@@ -171,6 +173,12 @@ button:active{
     background: #51c8e6;
 }
 
+/*Formatando o Formulario*/
+.formulario
+{}
+
+
+
 /*MAPA*/
 .store-location{
 
@@ -183,6 +191,7 @@ button:active{
 footer{
     background-color: #050816;
     color: #94A3B8;
-    padding: 15px;
+    padding: 20px;
     margin-top: 20 px;
+    text-align: center;
 }
