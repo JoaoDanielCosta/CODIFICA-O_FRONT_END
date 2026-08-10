@@ -89,3 +89,22 @@ function listaProdutos(lista){
 }
 
 listaProdutos (produtos);
+
+function filtrarPorCategoria(categoria){
+    return produtos.filter(produto => produto.categoria === categoria);
+
+}
+
+
+
+const produtosNovos = [
+    ...produtos17,
+    {
+        id:1,
+        nome:"Notebook",
+        preco: 7340.00,
+        categoria:"Brinquedos",
+        imagem:"notebook.jpg"
+    },
+
+];
